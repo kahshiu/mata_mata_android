@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:text="Show map here"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:background="@color/colorPrimary"
+        ></Button>
+
+    <Button
+        android:id="@+id/btn_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_map"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-60dp"
+        android:background="@color/colorPrimary"
+        android:text="Print location"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white"></Button>
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_location"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-60dp"
+        android:background="@color/colorPrimary"
+        android:text="Call Home"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white"></Button>
+
+    <Button
+        android:id="@+id/btn_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_call"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-60dp"
+        android:background="@color/colorPrimary"
+        android:text="sms Home"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white"></Button>
+
+    <TextView
+        android:id="@+id/textbox_lat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_sms"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-60dp"
+        android:gravity="center_horizontal"
+        android:text="Lat Here"
+        android:textAppearance="?android:textAppearanceLarge"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/textbox_lng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textbox_lat"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-60dp"
+        android:gravity="center_horizontal"
+        android:text="Lng Here"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+
+</RelativeLayout>
